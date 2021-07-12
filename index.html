@@ -63,13 +63,22 @@ div {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 0px;
+    row-gap: 0px;  
+    overflow: hidden;
+   padding: 34.37% 0 0 0; /* 34.37% = 100 / (w / h) = 100 / (640 / 220) */
 }
 
-.image {
-  display:block;
-  height: auto;
 
+.container img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
   
