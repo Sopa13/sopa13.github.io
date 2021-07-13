@@ -86,8 +86,6 @@ div {
   bottom: 0;
   left: 0;
   right: 0;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
 }
 
   
@@ -130,6 +128,15 @@ div {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+    position: relative;
+    font-size: 40px;
+    min-height: 325px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 0px;  
+    overflow: hidden;
+    padding: 34.37% 0 0 0;
 }
 
 @media only screen and (min-width: 325px) and (min-height: 325px) {
